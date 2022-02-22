@@ -1,0 +1,92 @@
+*{
+    font-family: Arial;
+    margin:0;
+    
+}
+#container{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+header{
+    color: #00f;
+    background-color: #FF8C00;
+    padding: 10px;
+}
+nav{
+    background-color: #191970;
+}
+nav ol{
+    list-style: none;
+}
+nav ol li{
+    text-transform: uppercase;
+    display: inline;
+    padding: 0.05px;
+}
+nav ol li a{
+    padding: 15px;
+    display: inline-block;
+    color: 	#4169E1;
+    text-decoration: none;
+    border-bottom:	#1E90FF solid 4px;
+    border-top:	#1E90FF solid 4px;
+    border-radius: 20px;
+}
+nav ol li a:hover{
+    color:#fff;
+    background-color: #0000CD;
+}
+footer{
+    color:#fff;
+    border-bottom:#000 ridge 4px;
+    text-align: center;
+    padding: 15px;
+}
+#principal{
+    text-align: center;
+}
+figure{
+    display: inline-block;
+    margin: 20px auto;
+    background-color:#1E90FF;
+    border-radius:15px;
+    padding: 5px;
+}
+figcaption a{
+    color:#000;
+    text-decoration: none;
+}
+section{
+    background-color: #FF8C00;
+    border-bottom: #000 ridge 4px;
+}
+table{
+    margin:20px auto;
+    width: 80%;
+}
+table, td{
+    border:1px solid #000;
+    background-color:#F4A460;
+}
+table tr td{
+    padding:10px;
+    font-family: Calibri black;
+    text-transform: uppercase;
+}
+.foto{
+    padding: 9px;
+}
+body{
+    background-image: url("../papeldeparede/image.png")
+}
+/* background-image url("../imagens/banner.gif */
+.minus{
+    text-transform: lowercase;
+}
+#principal h1{
+    font-family: verdana;
+    border-bottom: 3px solid #000;
+    margin: 10px;
+    text-transform: uppercase;
+}
