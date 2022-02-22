@@ -1,0 +1,133 @@
+*{
+    font-family: verdana;
+    margin: 0;
+}
+#container{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+header{
+    background-color: #00f;
+    color:#fff;
+    padding: 15px;
+}
+nav{/* Procurando na nav*/
+    background-color: #ddd;/*Cor de fundo cinza claro*/
+    text-align: center;/*Centralizar o texto*/
+}
+nav ol{/*procurando na nav e depois no ol*/
+    list-style: none;/*estilo da lista = nenhum */
+}
+nav ol li{ /*Procurando na nav e dpois no ol e depois o li*/
+    display: inline;/* Coloca os intens um do lado do outro*/
+    text-transform: uppercase; /*formata o texto em Maíusculo*/
+}
+nav ol li a{
+    padding: 10px;
+    display: inline-block;/*bloqueou o link com elemento que esta dentro dele*/
+    color: #333;
+    text-decoration: none;/* remove o sublinhado do link*/
+    border-bottom: #00f solid 3px;/*borda abaixo*/ 
+}
+/* Modadando a cor de fundo e a palavra do header quando passar a seta do mousa em cima. */
+nav ol li a:hover{
+    color: #fff;
+    background-color: #048;
+}
+/* centralizando e formatando o rodapé do site. */
+footer{
+    color: #00f;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 20px; 
+    text-align: center;
+}
+#principal{
+    text-align: center;
+}
+figure{
+    background-color: #000;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 25px;/*arredonda os cantos*/
+    opacity: 0.8;/* Deixa o elemento transparete*/
+}
+figure:hover{
+    opacity: 1;
+}
+figcaption a{
+    color: #fff;
+    text-decoration: none;
+}
+table{
+    margin:20px auto;
+    width: 80%;
+}
+table tr th{
+    background-color:#00f;
+    padding:10px;
+    color: #fff
+}
+table tr td{
+    padding:10px;
+    text-align:left;
+}
+.semana{
+    background-color:#87CEFA;
+}
+#principal h1{
+    color: #00f;
+    padding:20px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #000;
+}
+/* Outro jeito de aplicar a bordar em outros elementos ao mesmo tempos */
+table, th, td{
+    border:3px solid #808080;
+}
+tr:hover{
+    background-color: #000;
+    color: #fff;
+   
+}
+form{
+    padding: 15px;
+    /*border: 1px solid #000; na hora de centralizar e bom colocar a bordar */ 
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+.grupo{
+    padding: 10px;
+    /*border: 1px solid #000;*/
+}
+.grupo input, select{
+    width: 100%;
+    height: 25px;
+    border: 4px solid #888;
+    border-radius: 10px;
+}
+.grupo input:focus, select:focus, textarea:focus{
+    /*focus: formata quando clica o mouse */
+    border: 6px solid #0cf;
+}
+textarea{
+    width: 100%;
+    height: 50px;
+    border: 4px solid #888;
+    border-radius: 10px;
+}
+.genero{
+    width: 13px !important;
+    /* Comando !important é para sobrepor um
+    comando no Css quando há conflito entre 
+    dois ou mais estilos */
+    height: 13px !important;
+}
+/* border-top:Borda superior */
+/* border-left:borda da esquerda */
+/* border-right:borda da direito */
+/* border bottom: borda inferior */
+/*  */
