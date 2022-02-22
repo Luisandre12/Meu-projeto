@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nível Games - vc é o player 1</title>
+    <!-- trocando a fonte de todas as plavras. -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="imagens/favicon.png"image="image/png">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>
+                Nível Games
+            </h1>
+        </header>
+        <Nav>
+            <ol>
+                <li><a href="index.html">home</a></li>
+                <li><a href="consoles.html">consoles</a></li>
+                <li><a href="jogos.html">jogos</a></li>
+                <li><a href="multimidia.html">multimidia</a></li>
+                <li><a href="contato.html">contato</a></li>
+                <li><a href="horario.html">horario</a></li>
+                <li><a href="comochegar.html">como chegar</a></li>
+            </ol>
+        </Nav>
+        <section id="principal">
+            <h1>Contato</h1>
+            <form action="index.html" method="get">
+                <div class="grupo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id=nome placeholder="Digite seu nome aqui" name="nome" required onchange="teste()"/>
+                </div>
+                <div class="grupo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Digite seu e-mail aqui" name="email" required/>
+                </div>
+                <div class="grupo">
+                    <label for="idade">Idade</label>
+                    <input type="number" id="idade" placeholder="Digite sua idade aqui" name="idade" min="0" max="200" />
+                </div>
+                <div class="grupo">
+                    <label for="datanascimeto">Data de Nascimento</label>
+                    <input type="date" id="datanascimeto" name="datanascimento" />
+                </div>
+                <div class="grupo">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" placeholder="Digite seu telefone aqui" name="telefone" />
+                </div>
+                <div class="grupo">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Digite sua senha aqui" name="senha" requiered />
+                    <a href="#" onclick="ver()" id="btn">Ver Senha</a>
+                </div>
+                <div class="grupo">
+                    <label for="csenha">Confirmar Senha</label>
+                    <input type="password" id="csenha" placeholder="Confirme sua senha " name="csenha" required  onblur="verifica()" />
+                </div>
+                <div class="grupo">
+                    <label for="setor">Setor</label>
+                    <select name="" id="setor" id="setor">
+                        <option value="financeiro">Financeiro</option>
+                        <option value="jogos">Jogos</option>
+                        <option value="consoles">Consoles</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+                <div class="grupo">
+                    <label for="genero">Genero</label>
+                    <div>
+                        <input class="genero" checked type="radio" name="genero" value="m" id="masc" />
+                        <label for="masc">Masculino</label>
+                        <input class="genero" type="radio" name="genero" value="f" id="femi" />
+                        <label for="femi">Feminino</label>
+                    </div>
+                </div>
+                <div class="grupo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="msg" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <Footer>
+            <H5>
+               Parque araruama,são joão de meriti, RJ
+            </H5> 
+        </Footer>
+    </div>
+</body>
+</html>
+<script>
+    //verificar se a senha e o confirmar senha sejam iguais
+    function verifica(){
+        a = document.getElementById("senha").value;
+        b = document.getElementById("csenha").value;
+        if(a!=b){
+            alert("Senhas não conferem");
+            document.getElementById("senha").value = "";
+            document.getElementById("csenha").value = "";
+            document.getElementById("senha").focus();
+        }
+    }
+    //function de amostra e ocultar senha
+    function ver(){
+       a = document.getElementById("senha").type;  
+        if(a == "password"){
+            document.getElementById("senha").type = "text";
+            document.getElementById("btn").innerHTML = "ocultar";
+        }else{
+            document.getElementById("senha").type = "password";
+            document.getElementById("btn").innerHTML = "ver senha";
+    }
+}
+    /*alert("Olá Mundo");  quando iniciar uma pagina vai aparecer ola mundo*/ 
+    /*let a=prompt("Digite seu nome"); colocando a variavel a como digita seu nome*/
+    /*document.getElementById("nome").value = a; quando voce digita seu nome no inicio ja vai aparecer no nome de contato*/
+    /*function teste(){*/
+        /*alert("Funcionou");*/
+</script>
+<!-- input: entratada de dados  -->
+<!-- value:  -->
+<!-- type: formatação do texto -->
+<!-- type email: formatação de texto para email -->
+<!-- type number: formatação para apenas numero -->
+<!-- type hidden: esconder o coóigo -->
+<!-- type date: formatação para data (coloca um calendario em que o usuario coloque uma data) -->
+<!-- type password: formatação para senha (coloca as bolinhas para esconder quando digitar a senha) -->
+<!-- type radio: cria opções para o usuario escolher 1 opção. -->
+<!-- type checkbox: cria opções e usuario pode escolher mais de 1 opção -->
+<!--  value:serve para colocar o valor dentro do campo -->
+<!-- min:colocar o numero minimo -->
+<!-- max:colocar o numero maximo -->
+<!-- readonily: Somento leitura -->
+<!-- required:Faz com que o usuario seja obrigado prencher aquele o campo  -->
+<!-- checked: marca automaticamente a opção quando carrregar pagina -->
+<!-- selected:e so para deixar selecionado -->
+<!-- script mudar onchange -->
+<!-- script ao clicar :onclick -->
+<!-- onblur: mudar o foco -->
+<!-- onfocus: entra foco -->
+<!-- onkeypress: ao apertar botão told -->
